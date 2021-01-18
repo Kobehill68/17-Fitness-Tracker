@@ -9,3 +9,19 @@ app.use(logger('dev'));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(express.static("public"));
+
+mongoose.connect(
+    process.env.MONGOB_URI || '',
+    {
+
+    }
+);
+
+app.use(require('./routes/html-routes'));
+app.use(require('./routes/api-routes'));
+
+app.listen(PORT, () => {
+    console.log(`App running on port ${PORT}!`);
+})
