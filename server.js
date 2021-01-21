@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const logger = require("morgan");
+const logger = require('morgan');
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -19,6 +19,7 @@ mongoose.connect(
         useUnifiedTopology: true,
         useCreateIndex: true,
         useFindAndModify: false,
+
     }
 );
 
