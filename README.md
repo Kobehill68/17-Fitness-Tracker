@@ -11,7 +11,7 @@ about the workouts that you have completed.
 
 ## Usage
 Click on the link below first
-
+https://gentle-spire-87547.herokuapp.com/
 Then Click on new workout button and fill in the inout fields
 You can also click on Dashboard in  the nav bar to view the stats 
 of you workouts.
