@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const logger = require("morgan");
@@ -13,7 +14,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-    process.env.MONGOB_URI || "mongodb://localhost/workout",
+    process.env.MONGODB_URI || "mongodb://localhost/workout",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
